@@ -1,46 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sorry</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
-     <style>
-        #para {
-            display: none;
-        }
-     </style>
-    
-    </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KMRL Metro Train Maintenance Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <div class="sticky-lg-bottom d-flex justify-content-center align-items-center">
-        <button type="button" class="btn btn-primary sticky-bottom">Click Me</button>
-    </div>
+  <header>
+    <h1>Kochi Metro – Train Maintenance Dashboard</h1>
+    <input type="text" id="searchInput" placeholder="Search Trainset...">
+  </header>
 
-    <div class="card">
-        <div id = "para" class="card-body bg-success">
-           <p class="text-white d-flex justify-content-center align-items-center">Sorry Didi</p>
-        </div>
+  <section class="train-container" id="trainContainer">
+    <!-- JS will load train cards here -->
+  </section>
 
-    </div>
-    
-
-
-    <script>
-        button = document.querySelector("button");
-        para = document.querySelector("#para");
-
-        button.addEventListener("click", (e) => {
-          if(para.style.display === "none") {
-            para.style.display = "block";
-            button.style.display = "none";
-          } else {
-            para.style.display = "none";
-          };
-
-        });
-
-    </script>
+  <script src="app.js"></script>
 </body>
 </html>
